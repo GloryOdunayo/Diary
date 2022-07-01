@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: url(images/img\ \(122\).jpg);
+    background-size: cover;
+    font-family:'Segoe UI';
+}
+div .form-control::placeholder {
+    /* color: black; */
+    font-size: 15px;
+    /* color: #302D2B; */
+}
+h1 {
+    text-shadow: 2px 2px black;
+}
