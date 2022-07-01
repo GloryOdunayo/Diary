@@ -1,0 +1,132 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: aquamarine;
+}
+.surface{
+    background-color: aliceblue;
+    height: 800px;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 100px;
+    border-radius: 20px 20px 0px 0px;
+}
+.letf-content{
+    background-color: orangered;
+    height: 800px;
+    width: 23%;
+    border-radius: 20px;
+    position: relative;
+}
+/* @media only screen and (max-width: 500px) {
+    .profilePic{
+        height: 80px;
+        width: 80px;
+        border-radius: 50px;
+        margin: 30px 0px 0px 105px;
+        position: absolute;
+
+    }
+} */
+
+.dashboard-menu {
+    width: 100%;
+    height: 60px;
+}
+  
+.dashboard-menu a {
+    background-color: orangered;
+    color: aliceblue;
+    display: block;
+    padding: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: cursive;
+    font-weight: 700;
+
+} 
+.dashboard-menu a:hover {
+    background-color: aliceblue;
+    color: orangered;
+}
+  
+.dashboard-menu a.active {
+    background-color: orangered;
+    color: aliceblue;
+    border-radius: 15px 15px 0px 0px;
+    /* box-shadow: inset 90px -30px 40px orangered; */
+    height: 60px;
+    margin: auto;
+    border-radius: 20px 20px 0px 0px;
+
+}
+/* span{
+    position: relative;
+    top: 27px;
+} */
+.profilePic{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    margin: 30px 0px 0px 105px;
+}
+.surface-header1{
+    background-color: whitesmoke;
+    height: 70px;
+    width: 80%;
+    position: absolute;
+    box-shadow:  0px 5px 10px #5a5a5a,
+                 0px 10px 10px;
+    /* box-shadow: 12px 0 0 4px rgb(234 76 137 / 10%); */
+    border-radius: 0px 20px 0px 0px;
+    right: 0px;
+}
+/* From uiverse.io by @alexruix */
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    max-width: 500px;
+    margin: 12px 50px 0px 100px;
+   }
+   
+   .input {
+    width: 100%;
+    height: 40px;
+    line-height: 28px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 0px 30px 0px 0px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+   }
+   
+   .input::placeholder {
+    color: #9e9ea7;
+   }
+   
+   .input:focus, input:hover {
+    outline: none;
+    border-color: orangered;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+   }
+   
+   .icon {
+    position: relative;
+    left: 28.0rem;
+    fill: #656570;
+    width: 1rem;
+    height: 1rem;
+   }
+   
+   
+   
+   
+   
+   
