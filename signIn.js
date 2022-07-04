@@ -9,7 +9,8 @@ function login(){
     else{
         alert("Account does not exist, Please sign up");
         return "Please sign up first"
-    }   
+    } 
+    window.location.href = "dashboard.html";  
 }
 
 function sign(){

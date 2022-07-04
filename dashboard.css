@@ -10,7 +10,7 @@ body{
     margin: auto;
     position: relative;
     top: 100px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px;
 }
 .letf-content{
     background-color: orangered;
@@ -29,6 +29,32 @@ body{
 
     }
 } */
+.settings{
+    display: inline-block;
+}
+.xrdd{
+    margin-left: 25px;
+}
+.bi-gear{
+    color: rgb(59, 52, 52);
+    position: absolute;
+    left: 100px;
+    bottom: 25px;
+    height: 20px;
+    width: 20px;
+}
+.bi-bell{
+    color: rgb(59, 52, 52);
+    position: absolute;
+    right: 13px;
+    bottom: 25px;
+    height: 20px;
+    width: 20px;
+}
+.bi-bell:hover{
+    color:orangered;
+    
+}
 
 .dashboard-menu {
     width: 100%;
@@ -73,13 +99,10 @@ body{
     margin: 30px 0px 0px 105px;
 }
 .surface-header1{
-    background-color: whitesmoke;
+    background-color: gainsboro;
     height: 70px;
     width: 80%;
     position: absolute;
-    box-shadow:  0px 5px 10px #5a5a5a,
-                 0px 10px 10px;
-    /* box-shadow: 12px 0 0 4px rgb(234 76 137 / 10%); */
     border-radius: 0px 20px 0px 0px;
     right: 0px;
 }
@@ -113,7 +136,7 @@ body{
    .input:focus, input:hover {
     outline: none;
     border-color: orangered;
-    background-color: #fff;
+    background-color: aliceblue;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
    }
    
@@ -124,9 +147,41 @@ body{
     width: 1rem;
     height: 1rem;
    }
+.create-new {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: whitesmoke;
+    position: absolute;
+    right: 20px;
+    top: 130px;
+    background: rgb(64, 101, 134);
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 10px;
+    width: 200px;
+   }
+   .text{
+    margin-left: 20px;
+   }
    
+   .create-new svg {
+    margin-right: 6px;
+   }
    
+   .create-new:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em aliceblue;
+   }
    
-   
+   .create-new:active {
+    box-shadow: 0 0.3em 1em -0.5em orangered;
+   }
+ 
+
    
    
