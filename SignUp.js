@@ -33,6 +33,7 @@ function signUp() {
     }
     else {
         alert("Please fill the spaces");
+        return;
     }
     window.location.href = "signIn.html";
 }
