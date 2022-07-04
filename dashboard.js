@@ -1,4 +1,4 @@
-let allUsers = JSON.parse(localStorage.getItem("Users"))
+let allUsers = JSON.parse(localStorage.getItem("notes"))
 let allNotes = []
 function getPreviousNotes(){
     if(localStorage.allNotes)
