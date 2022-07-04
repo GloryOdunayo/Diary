@@ -35,4 +35,5 @@ function signUp() {
     else {
         alert("Please fill the spaces");
     }
+    window.location.href = "signIn.html";
 }
