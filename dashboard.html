@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="dashboard.css">
 </head>
-<body>
+<body onload="getPreviousNotes()">
     <div class="surface">
         <div class="surface-header1">
             <div class="group">
@@ -18,13 +18,14 @@
         <div class="surface-header2">
            
         </div>
+        <button onclick="add()">Add</button>
         <div class="letf-content">
             <img src="pics/good-faces-xmSWVeGEnJw-unsplash.jpg" alt="Profile Picture" class="profilePic">
             <div class="dashboard-menu">
                 <a href="dashboard.html" class="active">&#128100 Your Profile</a>
                 <a href="#">&#128222 Contacts</a>
                 <a href="#">&#128209 To do List</a>
-                <a href="#">&#128221 Notes</a>
+                <a href="notes.html">&#128221 Notes</a>
                 <a href="#">&#128197 Events</a>
               </div>
         </div>

@@ -30,9 +30,9 @@ function signUp() {
         allUser.push(obj);
         // console.log(allUser);
         localStorage.setItem("Users", JSON.stringify(allUser));
-
     }
     else {
         alert("Please fill the spaces");
     }
+    window.location.href = "signIn.html"
 }

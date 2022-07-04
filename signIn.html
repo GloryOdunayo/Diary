@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
 </head>
 <body>
     <h1 align="center">Welcome&nbsp;Back</h1>
     <div class="p-4 mx-auto w-50 shadow mb-5 rounded">
         <h4 class="text-info">Login&nbsp;your&nbsp;account</h4>
         <div class="text-secondary">
-            <label for="username">Username: &nbsp;</label>
-            <input type="email" class="form-control shadow" placeholder="Enter Your email" id="username">
+            <label for="mail">Username: &nbsp;</label>
+            <input type="email" class="form-control shadow" placeholder="Enter Your email" id="mail">
         </div>
         <div>
             <label for="pass">Password</label>
             <input type="password" placeholder="Your Password" class="form-control shadow" id="pass">
         </div><br>
         <p>Forgot password?</p>
-        <button class="btn bg-info rounded-pill text-white" onclick="signIn()">Login</button>
-        <div class="d-flex justify-content-center">
-            <p>Don't you have an account?</p>
-            <button class="btn bg-danger ms-5 text-white rounded-pill">SIGN UP</button>
+        <button class="btn bg-info rounded-pill text-white" onclick="login()">Login</button>
+        <div class="row">
+            <p class="col-lg-8">Don't you have an account?</p>
+            <button onclick="sign()" class="btn bg-danger ms-5 col-lg-2 text-white rounded-pill">SIGN UP</button>
         </div>
     </div>
     
