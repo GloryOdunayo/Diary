@@ -1,0 +1,85 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="addContacts.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body class="">
+    <div class="mx-auto bg-white border mt-5 w-75 shadow">
+        <div class="border-bottom ms-3 p-3 mt-3 mx-3 bg-light" id="create">Create Contact<button class="btn col-3 float-end btn-outline-secondary btn-secondary text-light" onclick="saveContact()">Save</button></div>
+
+        <div class="row">
+            <div class="ms-4 mt-3 col-8 border mb-3 p-1 bg-light rounded">
+                <div>
+                    <img src="images/download (4).jpg" alt="" width="90">
+                    <label for="pic"></label>
+                    <input type="file" id="pic" placeholder="Photo" required="">
+                </div>
+            </div>
+    
+            <div class="ms-5 mt-3 col-lg-3 col-md-2 border mb-3 p-1 bg-light rounded" id="logo">
+                <div>
+                    <img src="images//Beige_And_Black_Minimalist_Clothing_Store_Logo-removebg-preview.png" alt="" width="90">
+                </div>
+            </div>
+        </div>
+        
+        <div id="divGuy" class="px-2 py-4 mx-3 bg-light mb-4 rounded row border">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="text-secondary d-flex mb-3">
+                    <label for="firstName" class="mt-2"><img src="images/black-24dp/1x/outline_person_black_24dp.png" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow p-2" placeholder="First name" id="firstName" required="">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="surName" class="mt-2"><img src="images/black-24dp/1x/outline_person_black_24dp.png" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow p-2" placeholder="Surname" id="surName">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="phone" class="mt-2"><img src="images/black-24dp (1)/1x/outline_call_black_24dp.png" alt=""></label>&nbsp;
+                    <input type="number" class="form-control shadow p-2" placeholder="Phone" id="phoneNo">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="address" class="mt-2"><img src="images/location_on_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="text/number" class="form-control shadow p-2" placeholder="Address" id="adDress">
+                </div>
+                <div class="text-secondary d-flex mb-2" title="birthday">
+                    <label for="Birthday" class="mt-2"><img src="images/insert_invitation_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="date" class="form-control shadow p-2" placeholder="Birthday" id="birthDay">
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="text-secondary d-flex mb-3">
+                    <label for="company" class="mt-2"><img src="images/business_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow p-2" placeholder="Company" id="comPany">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="Department" class="mt-2"><img src="images/business_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow p-2" placeholder="Department" id="dept">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="mail" class="mt-2"><img src="images/mail_outline_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="email" class="form-control shadow p-2" placeholder="Email" id="mail">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="website" class="mt-2"><img src="images/language_FILL0_wght400_GRAD0_opsz48.svg" alt="" width="25"></label>&nbsp;
+                    <input type="url" class="form-control shadow p-2" placeholder="Website" id="web">
+                </div>
+                <div class="text-secondary d-flex mb-2">
+                    <label for="notes" class="mt-2"><img src="images/note_black_24dp.svg" alt="" width="25"></label>&nbsp;
+                    <input type="text" class="form-control shadow p-2" placeholder="Notes" id="notes">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <button class="position-relative top-50 start-50 translate-middle mt-2 btn btn-outline-secondary btn-secondary text-light" onclick="goBack()">Back to dashboard</button>
+        </div>
+    </div>
+<script src="addContacts.js"></script>
+</body>
+</html>
