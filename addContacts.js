@@ -32,7 +32,7 @@ function saveContact() {
     // console.log(dfg);
 }
 const goBack=()=>{
-  location.href = "/dashboard.html"
+  location.href = "/dashboard.html";
 }
 
 // // Some random colors
