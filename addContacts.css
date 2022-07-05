@@ -8,6 +8,16 @@ html,body {
     font-size: 20px;
     font-weight: 600;
 }
+#logo {
+    display: grid;
+    justify-content: center;
+}
+@media screen and (max-width:450px) {
+    #logo {
+        display: none;
+    }
+    
+}
 /* .ball {
     position: absolute;
     border-radius: 100%;
