@@ -28,9 +28,11 @@ function saveContact() {
         alert("Please fill apprpriately");
         return;
     }
-   
     // dfg = allContact.push(obj)
     // console.log(dfg);
+}
+const goBack=()=>{
+  location.href = "/dashboard.html"
 }
 
 // // Some random colors
