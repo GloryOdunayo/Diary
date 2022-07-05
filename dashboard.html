@@ -20,15 +20,26 @@
             </svg>
         </div>
 
-        <button class="create-new">
+        <div class="dropdown-c-n">
+            <button class="create-new">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"></path><path fill="currentColor" d="M11 11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg>
                 <span class="text">Create New</span>
-        </button>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Contacts</a>
+                <a href="#">To do list</a>
+                <a href="#">Notes</a>
+                <a href="#">Events</a>
+            </div>
+        </div>
 
         <div class="letf-content">
-            <img src="pics/good-faces-xmSWVeGEnJw-unsplash.jpg" alt="Profile Picture" class="profilePic">
+        <img src="pics/good-faces-xmSWVeGEnJw-unsplash.jpg" alt="Profile Picture" class="profilePic">
             <div class="dashboard-menu">
-                <a href="dashboard.html" class="">&#128100 Your Profile</a>
+                <a href="dashboard.html" class="dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                    <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                  </svg> Dashboard</a>
                 <a href="#">&#128222 Contacts</a>
                 <a href="#">&#128209 To do List</a>
                 <a href="#">&#128221 Notes</a>
@@ -43,9 +54,27 @@
         </div>
         
         <div class="major-pg-one">
-        <div class="my-content"></div>
-        <div class="my-content"></div>
-        <div class="my-content"></div>
+            <div class="portfoliocard">
+                <div class="coverphoto"></div>
+                <div class="profile_picture"></div>
+
+                <div class="left_col">
+                  <h2 class="name">Amira Adawiyah</h2>
+                  <li class="work">Student</li>
+
+                  <ul class="contact_information">
+                    <li class="mail"><strong>Email:</strong> miradda@gmail.com</li>
+                    <li class="phone"><strong>Tel:</strong> +234 901 443 8867</li>
+                  </ul>
+                </div>
+                <div class="right_col">
+                    <div class="My-Bio">
+                        <span class="bio-tl">My Bio</span>
+                        <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam nesciunt assumenda porro id illum fugit, aut fuga dicta nihil, amet animi perspiciatis sapiente sequi officia nulla cupiditate praesentium, commodi eligendi?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum error, nihil natus a fuga aut voluptatibus et debitis consequuntur ex minima eligendi sapiente eos iste perspiciatis eveniet quis nisi incidunt?
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

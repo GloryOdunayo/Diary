@@ -1,7 +1,8 @@
 body{
     margin: 0px;
     padding: 0px;
-    background-color: aquamarine;
+    background: #95483f;
+    background-image: linear-gradient(90deg, #000004, #160b39, #420a68, #6a176e, #932667, #ba3655, #dd513a, #f3761b, #fca50a, #f6d746, #f6d746);
 }
 .surface{
     background-color: aliceblue;
@@ -9,11 +10,12 @@ body{
     width: 90%;
     margin: auto;
     position: relative;
-    top: 100px;
+    top: 85px;
     border-radius: 20px;
+    overflow:hidden;
 }
 .letf-content{
-    background-color: orangered;
+    background-color: #A35D30;
     height: 800px;
     width: 23%;
     border-radius: 20px;
@@ -52,8 +54,7 @@ body{
     width: 20px;
 }
 .bi-bell:hover{
-    color:orangered;
-    
+    color: white;
 }
 
 .dashboard-menu {
@@ -62,10 +63,10 @@ body{
 }
   
 .dashboard-menu a {
-    background-color: orangered;
+    background-color: #A35D30;
     color: aliceblue;
     display: block;
-    padding: 20px;
+    padding: 35px;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
@@ -74,29 +75,24 @@ body{
 
 } 
 .dashboard-menu a:hover {
-    background-color: aliceblue;
-    color: orangered;
+    background-color: #DCDCDC;
+    color: black;
 }
   
 .dashboard-menu a.active {
-    background-color: orangered;
+    background-color: #6A4C34;
     color: aliceblue;
     border-radius: 15px 15px 0px 0px;
-    /* box-shadow: inset 90px -30px 40px orangered; */
     height: 60px;
     margin: auto;
     border-radius: 20px 20px 0px 0px;
 
 }
-/* span{
-    position: relative;
-    top: 27px;
-} */
 .profilePic{
-    height: 80px;
-    width: 80px;
+    height: 130px;
+    width: 130px;
     border-radius: 50px;
-    margin: 30px 0px 0px 105px;
+    margin: 30px 0px 0px 78px;
 }
 .surface-header1{
     background-color: gainsboro;
@@ -106,7 +102,6 @@ body{
     border-radius: 0px 20px 0px 0px;
     right: 0px;
 }
-/* From uiverse.io by @alexruix */
 .group {
     display: flex;
     line-height: 28px;
@@ -135,7 +130,7 @@ body{
    
    .input:focus, input:hover {
     outline: none;
-    border-color: orangered;
+    border-color: #6A4C34;
     background-color: aliceblue;
     box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
    }
@@ -153,35 +148,173 @@ body{
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
-    padding: 0.7em 1.4em 0.7em 1.1em;
+    padding: 0.2em 0.2em 0.3em 0.3em;
     color: whitesmoke;
-    position: absolute;
-    right: 20px;
-    top: 130px;
-    background: rgb(64, 101, 134);
-    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    background: rgb(13, 16, 19);
+    background: linear-gradient(0deg, rgb(27,51,42) 0%, rgb(225, 214, 93) 100%);
     border: none;
-    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    box-shadow: 0 0.7em 1.5em -0.9em #6A4C34;
     letter-spacing: 0.05em;
     border-radius: 10px;
-    width: 200px;
+    width: 160px;
    }
    .text{
-    margin-left: 20px;
+    margin-left: 13px;
    }
    
    .create-new svg {
-    margin-right: 6px;
+    margin-right: 3px;
    }
    
-   .create-new:hover {
+   .create-new:hover{
     box-shadow: 0 0.5em 1.5em -0.5em aliceblue;
+    border-radius: 10px 10px 0px 0px;
    }
    
    .create-new:active {
-    box-shadow: 0 0.3em 1em -0.5em orangered;
+    box-shadow: 0 0.3em 1em -0.5em #6A4C34;
    }
- 
+   .dropdown-c-n{
+    position: absolute;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 90px;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    width: 130px;
+    padding: 15px;
+}
+.dropdown-content a:hover{
+    background-color: #ddd;
+    border-radius: 0px 0px 10px 10px;
+}
+.dropdown-c-n:hover .dropdown-content{
+    display: block;
+    border-radius: 0px 0px 10px 10px;
+}
+.dropdown-c-n:hover .create-new{
+    background-color: #6A4C34;
+}
 
-   
-   
+.major-pg-one{
+    position: absolute;
+    left: 30%;
+    top: 30%;
+}
+  .portfoliocard{
+    position:absolute;
+    height:650px;
+    width:700px;
+    background:rgba(255,255,255,1);
+    border: none;
+    box-shadow:0px -1px 3px rgba(0,0,0,0.1),
+                0px 2px 6px rgba(0,0,0,0.5);
+    border-radius:6px;
+    left: -50px;
+    top: -110px;
+    overflow:hidden;
+    z-index:100;
+  }
+  .coverphoto{
+    width:100%;
+    height:160px;
+    background:url(images/img\ \(122\).jpg);
+    background-position:center center;
+    border-top-right-radius:8px;
+    border-top-left-radius:8px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    box-shadow:inset 0px 3px 20px rgba(255,255,255,0.3),
+                    1px 0px 2px rgba(255,255,255,0.7);
+    z-index:99;
+  }
+  .left_col{
+    width:60%;
+    height:500px;
+    clip-path: ellipse(50% 81% at 18% 50%);
+    padding-top:80px;
+    box-sizing:border-box;
+    background-color: rgba(230,230,230,1);
+    position: absolute;
+    bottom: 0px;
+    list-style: none;
+    padding-left: 10px;
+
+  }
+  .right_col{
+    width:80%;
+    height:479px;
+    background:rgba(245,245,245,1);
+    border-left:1px solid #ddd;
+    box-shadow:inset 0px 1px 1px rgba(255,255,255,0.7);
+    margin-left:-1px;
+    border-bottom-right-radius:5px;
+    z-index: -2;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding: 30px;
+  }
+  .profile_picture{
+    width:200px;
+    height:200px;
+    background:rgba(255,255,255,1);
+    position:absolute;
+    top:65px;
+    left:35px;
+    border-radius:100%;
+    background-image: url(pics/good-faces-xmSWVeGEnJw-unsplash.jpg);
+    background-size:100% 100%;
+    padding:7px;
+    border:4px solid rgba(255,255,255,1);
+    z-index: 100;
+  }
+  .contact_information{
+    list-style: none;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 2;
+    font-size: 1.0rem;
+    position: absolute;
+    bottom: 30px;
+  }
+  .name{
+    margin: 60px 20px 0px 55px;
+    font-family: serif;
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  .work{
+    font-style: italic;
+    margin: 5px 0px 0px 100px;
+    font-size: 1.5rem;
+  }
+  .My-Bio{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 190px;
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 2.5;
+  }
+  .bio-tl{
+    margin: 0px 20px 0px 120px;
+    font-family: serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 2.2rem;
+  }
+
+ 
