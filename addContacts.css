@@ -1,9 +1,15 @@
-body {
-    /* background-image: url(images/contact-us-customer-service-icons-seamless-pattern-vector-20934220.png); */
-    background-size: cover;
+html,body {
+    overflow-y: hidden;
+    background-image: url(images/images\ \(4\).jpg);
+    background-size: contain;
 }
 #create {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-weight: 600;
+}
+.ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
 }
