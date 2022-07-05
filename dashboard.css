@@ -16,21 +16,22 @@ body{
 }
 .letf-content{
     background-color: #A35D30;
-    height: 800px;
+    height: 630px;
     width: 21%;
     border-radius: 20px;
     position: relative;
-}
-/* @media only screen and (max-width: 500px) {
-    .profilePic{
-        height: 80px;
-        width: 80px;
-        border-radius: 50px;
-        margin: 30px 0px 0px 105px;
-        position: absolute;
 
-    }
-} */
+}
+
+.Your-Profile{
+  position: absolute;
+  top: 85px;
+  left: 250px;
+  font-family: sans-serif;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bolder;
+}
 .settings{
     display: inline-block;
 }
@@ -38,18 +39,32 @@ body{
     margin-left: 25px;
 }
 .bi-gear{
-    color: rgb(59, 52, 52);
+    color:black;
     position: absolute;
-    left: 100px;
-    bottom: 25px;
+    left: 80px;
+    bottom: 50px;
     height: 20px;
     width: 20px;
+}
+.log-out{
+  display: inline-block;
+}
+.d{
+  margin-left: 30px;
+}
+.bi-power{
+  color: black;
+  position: absolute;
+  left: 80px;
+  bottom: 20px;
+  height: 20px;
+  width: 30px;
 }
 .bi-bell{
     color: rgb(59, 52, 52);
     position: absolute;
     right: 13px;
-    bottom: 25px;
+    bottom: 20px;
     height: 20px;
     width: 20px;
 }
@@ -89,10 +104,10 @@ body{
 
 }
 .profilePic{
-    height: 120px;
-    width: 120px;
+    height: 80px;
+    width: 80px;
     border-radius: 50px;
-    margin: 30px 0px 0px 65px;
+    margin: 30px 0px 0px 80px;
 }
 .surface-header1{
     background-color: gainsboro;
@@ -175,7 +190,6 @@ body{
     box-shadow: 0 0.3em 1em -0.5em #6A4C34;
    }
    .dropdown-c-n{
-    position: absolute;
     display: inline-block;
     position: absolute;
     right: 15px;
@@ -318,5 +332,49 @@ body{
     font-style: italic;
     font-size: 2.2rem;
   }
+  @media only screen and (max-width: 991px) {
+  .letf-content{
+    display: none;
+  }
+  .surface-header1{
+    width: 100%;
+  }
+  .Your-Profile{
+    position: absolute;
+    margin-top: -20px;
+    width: 100%;
+    transform: translateX(-250px);
+    font-size: 28px;
+  }
+  .dropdown-c-n{
+    z-index: 999;
+  }
+  .portfoliocard{
+    transform: translateX(-60px);
+    width: 80vw;
+  }
+  .cover{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+  }
+  .left_col{
+   width: 100%;
+  position: absolute;
+  clip-path: none;
+  }
+  .contact_information{
+   transform: translateY(-50px);
+  }
+  /* .right_col{
+   transform: translate(-50px,20px);
+   width:80%;
+   height:100px;
+    z-index: 1;
+  }
+   */
 
+}
  
