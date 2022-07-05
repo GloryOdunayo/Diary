@@ -8,7 +8,7 @@ function login(){
     }
     else{
         alert("Account does not exist, Please sign up");
-        return "Please sign up first"
+        return;
     } 
     window.location.href = "dashboard.html";  
 }

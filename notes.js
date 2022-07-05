@@ -1,23 +1,45 @@
-let allNotes = [];
-    let newNote = {
-        note: notes.value
+display()
+noteDetails =[]
+const saveIt =() => {
+    if (localStorage.getItem("Users")){
+        noteDetails = JSON.parse(localStorage.getItem("Users")) 
     }
-function saveIt(){
-    allNotes.push(newNote);
-        if(notes.value){
-            localStorage.setItem("notes", JSON.stringify(allNotes));
+    let head = title.value;
+    let body = notes.value;
+    object ={
+        title: head,
+        note : body,
     }
-    else {
-        alert("Please input something into the spaces");
-    }
+    noteDetails.push(object)
+    localStorage.setItem("Users", JSON.stringify(noteDetails));
+    location.reload()
 }
-// let findNotes = allNotes.find((val) => val.email == mail.value)
-// console.log(findNotes);
-// if (findNotes) {
-//     alert("Login successful");
-//     window.location.href ="dashboard.html"
-// }
-// else{
-//     alert("Account does not exist, Please sign up");
-//     return "Please sign up first"
-// }  
+
+function display(){
+    let tab =""
+    noteDetails = JSON.parse(localStorage.getItem("Users"));
+    for (let index = 0; index < noteDetails.length; index++) {
+        tab +=`<h2 class="note_title id="noteTitle">${noteDetails[index].head}</h2>
+        <p class= "note_body" id="noteBody>${noteDetails[index].body}</p> <div class ="note_btn"> <button onclick="edit(${index}) class_btn note_view">Edit</button> <button onclick="deleteNote(${index}) class_btn note_delete">Delete</button></div>`
+    }
+    console.log(noteDetails)
+    displayIt.innerHTML = tab;
+}
+
+function deleteNote(index){
+    noteDetails = JSON.parse(localStorage.getItem("Users"));
+    noteDetails.splice(i,1)
+    localStorage.setItem('Users', JSON.stringify(noteDetails))
+    location.reload()
+}
+
+let editIt;
+function edit(index){
+    noteDetails = JSON.parse(localStorage.getItem("Users"))
+    console.log(noteDetails)
+    title.value = noteDetails[index].head;
+    note.value = noteDetails[index].body;
+    hov.style.display= "none"
+    upd.style.display = "block";
+    editIt =index;
+}
