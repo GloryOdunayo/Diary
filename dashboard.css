@@ -2,22 +2,22 @@ body{
     margin: 0px;
     padding: 0px;
     background: #95483f;
-    background-image: linear-gradient(90deg, #000004, #160b39, #420a68, #6a176e, #932667, #ba3655, #dd513a, #f3761b, #fca50a, #f6d746, #f6d746);
+    background-image: url(images/img\ \(122\).jpg);
 }
 .surface{
     background-color: aliceblue;
-    height: 800px;
-    width: 90%;
+    height: 630px;
+    width: 85%;
     margin: auto;
     position: relative;
-    top: 85px;
+    margin-top: 30px;
     border-radius: 20px;
     overflow:hidden;
 }
 .letf-content{
     background-color: #A35D30;
     height: 800px;
-    width: 23%;
+    width: 21%;
     border-radius: 20px;
     position: relative;
 }
@@ -66,7 +66,7 @@ body{
     background-color: #A35D30;
     color: aliceblue;
     display: block;
-    padding: 35px;
+    padding: 22px;
     border-radius: 20px;
     text-decoration: none;
     text-align: center;
@@ -89,14 +89,14 @@ body{
 
 }
 .profilePic{
-    height: 130px;
-    width: 130px;
+    height: 120px;
+    width: 120px;
     border-radius: 50px;
-    margin: 30px 0px 0px 78px;
+    margin: 30px 0px 0px 65px;
 }
 .surface-header1{
     background-color: gainsboro;
-    height: 70px;
+    height: 60px;
     width: 80%;
     position: absolute;
     border-radius: 0px 20px 0px 0px;
@@ -107,16 +107,16 @@ body{
     line-height: 28px;
     align-items: center;
     max-width: 500px;
-    margin: 12px 50px 0px 100px;
+    margin: 10px 50px 0px 100px;
    }
    
    .input {
     width: 100%;
     height: 40px;
-    line-height: 28px;
+    line-height: 25px;
     border: 2px solid transparent;
     border-radius: 8px;
-    padding: 20px;
+    padding: 17px;
     margin: 0px 30px 0px 0px;
     outline: none;
     background-color: #f3f3f4;
@@ -147,7 +147,7 @@ body{
     align-items: center;
     font-family: inherit;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     padding: 0.2em 0.2em 0.3em 0.3em;
     color: whitesmoke;
     background: rgb(13, 16, 19);
@@ -156,14 +156,14 @@ body{
     box-shadow: 0 0.7em 1.5em -0.9em #6A4C34;
     letter-spacing: 0.05em;
     border-radius: 10px;
-    width: 160px;
+    width: 140px;
    }
    .text{
-    margin-left: 13px;
+    margin-left: 10px;
    }
    
    .create-new svg {
-    margin-right: 3px;
+    margin-right: 0px;
    }
    
    .create-new:hover{
@@ -178,8 +178,8 @@ body{
     position: absolute;
     display: inline-block;
     position: absolute;
-    right: 20px;
-    top: 90px;
+    right: 15px;
+    top: 80px;
   }
   
 .dropdown-content {
@@ -195,8 +195,8 @@ body{
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    width: 130px;
-    padding: 15px;
+    width: 120px;
+    padding: 10px;
 }
 .dropdown-content a:hover{
     background-color: #ddd;
@@ -210,28 +210,28 @@ body{
     background-color: #6A4C34;
 }
 
-.major-pg-one{
+/* .major-pg-one{
     position: absolute;
     left: 30%;
     top: 30%;
-}
+} */
   .portfoliocard{
     position:absolute;
-    height:650px;
-    width:700px;
+    height:490px;
+    width:730px;
     background:rgba(255,255,255,1);
     border: none;
     box-shadow:0px -1px 3px rgba(0,0,0,0.1),
                 0px 2px 6px rgba(0,0,0,0.5);
     border-radius:6px;
-    left: -50px;
-    top: -110px;
+    left: 22%;
+    top: 130px;
     overflow:hidden;
     z-index:100;
   }
   .coverphoto{
     width:100%;
-    height:160px;
+    height:145px;
     background:url(images/img\ \(122\).jpg);
     background-position:center center;
     border-top-right-radius:8px;
@@ -242,8 +242,8 @@ body{
     z-index:99;
   }
   .left_col{
-    width:60%;
-    height:500px;
+    width:55%;
+    height:350px;
     clip-path: ellipse(50% 81% at 18% 50%);
     padding-top:80px;
     box-sizing:border-box;
@@ -256,21 +256,21 @@ body{
   }
   .right_col{
     width:80%;
-    height:479px;
+    height:400px;
     background:rgba(245,245,245,1);
     border-left:1px solid #ddd;
     box-shadow:inset 0px 1px 1px rgba(255,255,255,0.7);
-    margin-left:-1px;
+    /* margin-left:-10px; */
     border-bottom-right-radius:5px;
     z-index: -2;
     position: absolute;
     right: 0px;
     bottom: 0px;
-    padding: 30px;
+    /* padding: 15px 0px 5px 0px; */
   }
   .profile_picture{
-    width:200px;
-    height:200px;
+    width:180px;
+    height:180px;
     background:rgba(255,255,255,1);
     position:absolute;
     top:65px;
@@ -289,7 +289,7 @@ body{
     line-height: 2;
     font-size: 1.0rem;
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
   }
   .name{
     margin: 60px 20px 0px 55px;
@@ -304,15 +304,17 @@ body{
   }
   .My-Bio{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    margin-left: 190px;
-    margin-top: 30px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-right: 30px;
     text-align: justify;
-    line-height: 2.5;
+    line-height: 2.4;
   }
   .bio-tl{
-    margin: 0px 20px 0px 120px;
+    margin: 0px 0px 0px 0px;
     font-family: serif;
     font-weight: 900;
+    margin-left: 140px;
     font-style: italic;
     font-size: 2.2rem;
   }
