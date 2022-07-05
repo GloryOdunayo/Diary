@@ -6,39 +6,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist\css\bootstrap.css">
     <link rel="stylesheet" href="addContacts.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <form class="mx-auto bg-white border mt-5 w-75 shadow" action="" method="">
-        <div class="border-bottom ms-3 px-3 mt-3" id="create">Create Contact</div>
-        <div class="ms-3 mt-3 border mx-3">
-            <!-- <img src="images/download (4).jpg" alt=""> -->
+        <div class="border-bottom ms-3 p-3 mt-3 mx-3 bg-light" id="create">Create Contact<button class="btn col-2 float-end btn-outline-secondary btn-secondary text-light">Save</button></div>
+
+        <div class="ms-3 mt-3 border mx-3 mb-3 p-1 bg-light">
+            <img src="images/download (4).jpg" alt="" width="90">
             <label for="pic">Choose Picture</label>
             <input type="file" id="pic" placeholder="Photo" required="" capture>
         </div>
-        <div id="divGuy" class="px-4 py-4 mx-3 shadow bg-light mb-5 rounded row">
+        <div id="divGuy" class="px-2 py-4 mx-3 bg-light mb-4 rounded row border-top border-bottom shadow">
             <div class="col-6">
-                <div class="text-secondary">
-                    <label for="firstName"><strong>First&nbsp;Name:&nbsp;</strong></label>
-                    <input type="text" class="form-control shadow" placeholder="&#x1F464;&nbsp;First Name" id="firstName">
+                <div class="text-secondary d-flex mb-3">
+                    <label for="firstName" class="mt-2"><img src="images/black-24dp/1x/outline_person_black_24dp.png" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow" placeholder="First name" id="firstName" required="">
                 </div>
-                <div class="text-secondary">
-                    <label for="lastName"><strong>Last&nbsp;Name:&nbsp;</strong></label>
-                    <input type="text" class="form-control shadow" placeholder="&#x1F464;&nbsp;Last Name" id="lastName">
+                <div class="text-secondary d-flex mb-3">
+                    <label for="lastName" class="mt-2"><img src="images/black-24dp/1x/outline_person_black_24dp.png" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow" placeholder="Surname" id="surName">
                 </div>
-                <div class="text-secondary">
-                    <label for="mail"><strong>Email&nbsp;Address:&nbsp;</strong></label>
-                    <input type="email" class="form-control shadow" placeholder="&#x1F4E7;&nbsp;E-Mail" id="mail">
+                <div class="text-secondary d-flex mb-3">
+                    <label for="phone" class="mt-2"><img src="images/black-24dp (1)/1x/outline_call_black_24dp.png" alt=""></label>&nbsp;
+                    <input type="number" class="form-control shadow" placeholder="Phone" id="phone" required="">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="address" class="mt-2"><img src="images/location_on_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="text/number" class="form-control shadow" placeholder="Address" id="add">
+                </div>
+                <div class="text-secondary d-flex mb-2" title="birthday">
+                    <label for="address" class="mt-2"><img src="images/insert_invitation_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="date" class="form-control shadow" placeholder="Birthday" id="birthday">
                 </div>
             </div>
 
             <div class="col-6">
-                <div class="text-secondary">
-                    <label for="password"><strong>Password:&nbsp;</strong></label>
-                    <input type="password" class="form-control shadow" placeholder="&#x1F512;&nbsp;Enter Password" id="pass">
+                <div class="text-secondary d-flex mb-3">
+                    <label for="company" class="mt-2"><img src="images/business_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow" placeholder="Company" id="company">
                 </div>
-                <div class="text-secondary">
-                    <label for="mobile"><strong>Mobile:&nbsp;</strong></label>
-                    <input type="number" class="form-control shadow" placeholder="&#x1F4DE;&nbsp;Enter Mobile Number" id="mob">
+                <div class="text-secondary d-flex mb-3">
+                    <label for="Department" class="mt-2"><img src="images/business_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="text" class="form-control shadow" placeholder="Department" id="dept">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="mobile" class="mt-2"><img src="images/mail_outline_black_24dp.svg" alt=""></label>&nbsp;
+                    <input type="email" class="form-control shadow" placeholder="Email" id="mail" required="">
+                </div>
+                <div class="text-secondary d-flex mb-3">
+                    <label for="mobile" class="mt-2"><img src="images/language_FILL0_wght400_GRAD0_opsz48.svg" alt="" width="25"></label>&nbsp;
+                    <input type="url" class="form-control shadow" placeholder="Website" id="web">
+                </div>
+                <div class="text-secondary d-flex mb-2">
+                    <label for="mobile" class="mt-2"><img src="images/note_black_24dp.svg" alt="" width="25"></label>&nbsp;
+                    <input type="url" class="form-control shadow" placeholder="Notes" id="web">
                 </div>
             </div>
         </div>
