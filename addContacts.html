@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist\css\bootstrap.css">
+    <link rel="stylesheet" href="addContacts.css">
+</head>
+<body>
+    <form class="mx-auto bg-white border mt-5 w-75 shadow" action="" method="">
+        <div class="border-bottom ms-3 px-3 mt-3" id="create">Create Contact</div>
+        <div class="ms-3 mt-3 border mx-3">
+            <!-- <img src="images/download (4).jpg" alt=""> -->
+            <label for="pic">Choose Picture</label>
+            <input type="file" id="pic" placeholder="Photo" required="" capture>
+        </div>
+        <div id="divGuy" class="px-4 py-4 mx-3 shadow bg-light mb-5 rounded row">
+            <div class="col-6">
+                <div class="text-secondary">
+                    <label for="firstName"><strong>First&nbsp;Name:&nbsp;</strong></label>
+                    <input type="text" class="form-control shadow" placeholder="&#x1F464;&nbsp;First Name" id="firstName">
+                </div>
+                <div class="text-secondary">
+                    <label for="lastName"><strong>Last&nbsp;Name:&nbsp;</strong></label>
+                    <input type="text" class="form-control shadow" placeholder="&#x1F464;&nbsp;Last Name" id="lastName">
+                </div>
+                <div class="text-secondary">
+                    <label for="mail"><strong>Email&nbsp;Address:&nbsp;</strong></label>
+                    <input type="email" class="form-control shadow" placeholder="&#x1F4E7;&nbsp;E-Mail" id="mail">
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="text-secondary">
+                    <label for="password"><strong>Password:&nbsp;</strong></label>
+                    <input type="password" class="form-control shadow" placeholder="&#x1F512;&nbsp;Enter Password" id="pass">
+                </div>
+                <div class="text-secondary">
+                    <label for="mobile"><strong>Mobile:&nbsp;</strong></label>
+                    <input type="number" class="form-control shadow" placeholder="&#x1F4DE;&nbsp;Enter Mobile Number" id="mob">
+                </div>
+            </div>
+        </div>
+    </form>
+
+<script src="addContacts.js"></script>
+</body>
+</html>

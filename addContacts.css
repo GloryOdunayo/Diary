@@ -1,0 +1,9 @@
+body {
+    /* background-image: url(images/contact-us-customer-service-icons-seamless-pattern-vector-20934220.png); */
+    background-size: cover;
+}
+#create {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
