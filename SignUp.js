@@ -1,13 +1,13 @@
 let getUser = JSON.parse(localStorage.getItem("Users"));
 // console.log(getUser);
+let allUser = [];
 function signUp() {
-    let allUser = [];
     let obj = {
         firstname: firstName.value,
         lastname: lastName.value,
         email: mail.value,
         password: pass.value,
-        mobile: mob.value
+        mobile: mob.value,
     }
     if (firstName.value && mail.value && pass.value && mob.value) {
         if (getUser != null) {

@@ -1,7 +1,7 @@
 let getUser = JSON.parse(localStorage.getItem("Users"));
 function saveContact() {
     let allContact = []
-    let obj = {
+    let contact = {
         firstname: firstName.value,
         lastname: surName.value,
         phone: phoneNo.value,
@@ -14,6 +14,7 @@ function saveContact() {
         notes: notes.value,
         picture: pic.value
     }
+    let newcontact = {"cont": contact}
     if (firstName.value && phoneNo.value && pic.value) {
         if (getUser != null) {
             allContact = getUser;
@@ -21,8 +22,8 @@ function saveContact() {
         else {
             allContact = []
         }
-        allContact.push(obj)
-        localStorage.setItem("Users", JSON.stringify(allContact));
+        allContact.push(newcontact)
+        localStorage.setItem("cont", JSON.stringify(allContact));
     }
     else {
         alert("Please fill apprpriately");
@@ -31,9 +32,9 @@ function saveContact() {
     // dfg = allContact.push(obj)
     // console.log(dfg);
 }
-const goBack=()=>{
-  location.href = "/dashboard.html";
-}
+// const goBack=()=>{
+//   location.href = "/dashboard.html";
+// }
 
 // // Some random colors
 // const colors = ["#3CC157", "#2AA7FF", "#1B1B1B", "#FCBC0F", "#F85F36"];

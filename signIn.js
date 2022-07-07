@@ -1,16 +1,23 @@
 let allUsers = JSON.parse(localStorage.getItem("Users"))
+let indUser = JSON.parse(localStorage.getItem("email"))
+let object = {
+    email: mail.value,
+    notes: [],
+    contact: [],
+    events: [] 
+}
 function login(){  
-    let findUsers = allUsers.find((val) => val.email == mail.value)
+    let findUsers = allUsers.find((val) => val.userMail == mail.value && val.password == pass.value)
     console.log(findUsers);
     if (findUsers) {
         alert("Login successful");
+        localStorage.email = JSON.stringify.mail.value
         window.location.href ="dashboard.html"
     }
     else{
-        alert("Account does not exist, Please sign up");
+        alert("Incorrect email or password");
         return;
-    } 
-    window.location.href = "dashboard.html";  
+    }  
 }
 
 function sign(){
