@@ -7,7 +7,7 @@ body{
 .surface{
     background-color: aliceblue;
     height: 630px;
-    width: 85%;
+    width: 178vh;
     margin: auto;
     position: relative;
     margin-top: 30px;
@@ -17,23 +17,28 @@ body{
 .letf-content{
     background-color: #A35D30;
     height: 630px;
-    width: 21%;
+    width: 32vh;
     border-radius: 20px;
     position: relative;
 
 }
-
 .Your-Profile{
   position: absolute;
-  top: 85px;
-  left: 250px;
+  top: 70px;
+  left: 40vh;
   font-family: sans-serif;
   font-size: xx-large;
   font-style: italic;
-  font-weight: bolder;
+  font-weight: bold;
+}
+.bi-person-fill{
+  margin-right: 20px;
+  position: absolute;
+  top: 70px;
+  left: 217px;
 }
 .settings{
-    display: inline-block;
+    /* display: inline-block; */
 }
 .xrdd{
     margin-left: 25px;
@@ -41,52 +46,55 @@ body{
 .bi-gear{
     color:black;
     position: absolute;
-    left: 80px;
+    left: 55px;
     bottom: 50px;
     height: 20px;
     width: 20px;
 }
-.log-out{
-  display: inline-block;
-}
-.d{
+.text-log-out{
   margin-left: 30px;
+  color: black;
+  position: absolute;
+  left: 50px;
+  bottom: 20px;
 }
 .bi-power{
   color: black;
   position: absolute;
-  left: 80px;
+  left: 50px;
   bottom: 20px;
-  height: 20px;
-  width: 30px;
+
 }
 .bi-bell{
     color: rgb(59, 52, 52);
     position: absolute;
     right: 13px;
-    bottom: 20px;
+    bottom: 16px;
     height: 20px;
     width: 20px;
 }
 .bi-bell:hover{
     color: white;
 }
+.bi-house, .bi-calendar4-event, .bi-list-task, .bi-journals, .bi-person-lines-fill{
+  margin: 0px 20px 0px 45px;
+}
 
 .dashboard-menu {
     width: 100%;
-    height: 60px;
 }
   
 .dashboard-menu a {
     background-color: #A35D30;
     color: aliceblue;
     display: block;
-    padding: 22px;
+    padding: 6px;
+    margin-bottom: 30px;
     border-radius: 20px;
     text-decoration: none;
-    text-align: center;
-    font-family: cursive;
-    font-weight: 700;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
 
 } 
 .dashboard-menu a:hover {
@@ -98,21 +106,19 @@ body{
     background-color: #6A4C34;
     color: aliceblue;
     border-radius: 15px 15px 0px 0px;
-    height: 60px;
+    height: 50px;
     margin: auto;
-    border-radius: 20px 20px 0px 0px;
-
 }
 .profilePic{
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
-    margin: 30px 0px 0px 80px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    margin: 30px 0px 10px 80px;
 }
 .surface-header1{
     background-color: gainsboro;
-    height: 60px;
-    width: 80%;
+    height: 50px;
+    width: 100%;
     position: absolute;
     border-radius: 0px 20px 0px 0px;
     right: 0px;
@@ -121,18 +127,17 @@ body{
     display: flex;
     line-height: 28px;
     align-items: center;
-    max-width: 500px;
-    margin: 10px 50px 0px 100px;
+    max-width: 400px;
+    margin: 10px 50px 0px 350px;
    }
    
    .input {
     width: 100%;
-    height: 40px;
+    height: 30px;
     line-height: 25px;
     border: 2px solid transparent;
     border-radius: 8px;
-    padding: 17px;
-    margin: 0px 30px 0px 0px;
+    padding: 13px;
     outline: none;
     background-color: #f3f3f4;
     color: #0d0c22;
@@ -147,12 +152,12 @@ body{
     outline: none;
     border-color: #6A4C34;
     background-color: aliceblue;
-    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    box-shadow: 0 0 0 4px rgba(139, 98, 114, 0.1);
    }
    
    .icon {
     position: relative;
-    left: 28.0rem;
+    left: 23.0rem;
     fill: #656570;
     width: 1rem;
     height: 1rem;
@@ -192,7 +197,7 @@ body{
    .dropdown-c-n{
     display: inline-block;
     position: absolute;
-    right: 15px;
+    right: 4%;
     top: 80px;
   }
   
@@ -223,27 +228,21 @@ body{
 .dropdown-c-n:hover .create-new{
     background-color: #6A4C34;
 }
-
-/* .major-pg-one{
-    position: absolute;
-    left: 30%;
-    top: 30%;
-} */
-  .portfoliocard{
+.portfoliocard{
     position:absolute;
     height:490px;
-    width:730px;
+    width:740px;
     background:rgba(255,255,255,1);
     border: none;
     box-shadow:0px -1px 3px rgba(0,0,0,0.1),
                 0px 2px 6px rgba(0,0,0,0.5);
     border-radius:6px;
-    left: 22%;
-    top: 130px;
+    left: 19%;
+    top: 128px;
     overflow:hidden;
     z-index:100;
   }
-  .coverphoto{
+.coverphoto{
     width:100%;
     height:145px;
     background:url(images/img\ \(122\).jpg);
@@ -255,7 +254,7 @@ body{
                     1px 0px 2px rgba(255,255,255,0.7);
     z-index:99;
   }
-  .left_col{
+.left_col{
     width:55%;
     height:350px;
     clip-path: ellipse(50% 81% at 18% 50%);
