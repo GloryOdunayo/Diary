@@ -1,7 +1,7 @@
 let getUser = JSON.parse(localStorage.getItem("Users"));
+let indUser = JSON.parse(localStorage.getItem("email"))
 function saveContact() {
-    let allContact = []
-    let contact = {
+    let obj = {
         firstname: firstName.value,
         lastname: surName.value,
         phone: phoneNo.value,
@@ -23,7 +23,7 @@ function saveContact() {
             allContact = []
         }
         allContact.push(newcontact)
-        localStorage.setItem("cont", JSON.stringify(allContact));
+        localStorage.setItem("email", JSON.stringify(allContact));
     }
     else {
         alert("Please fill apprpriately");

@@ -1,4 +1,5 @@
 let allUsers = JSON.parse(localStorage.getItem("Users"))
+let indUser = JSON.parse(localStorage.getItem("email"));
 function detailOfTheUser(){
     let userDetail = allUsers.find((val) => val.email && val.password)
     console.log(userDetail)
