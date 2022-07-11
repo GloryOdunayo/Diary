@@ -14,7 +14,7 @@
         }
     </style>
 </head>
-<body>
+<body onload="load()">
     <div class="surface">
         <div class="shadow-sm surface-header1">
             <div class="group">
@@ -48,10 +48,10 @@
                     <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                   </svg> Dashboard
                 </a>
-                <a href="">&#128222; Contact</a>
-                <a href="">&#128209; To do</a>
-                <a href="veiwNote.html">&#128221; Notes</a>
-                <a href="">&#128197; Events</a>
+                <a href="addContacts.html">&#128222; Contact</a>
+                <a href="todo.html">&#128209; To do</a>
+                <a href="notes.html">&#128221; Notes</a>
+                <a href="events.html">&#128197; Events</a>
               </div>
                 <div class="log-out">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
@@ -72,12 +72,36 @@
                 <h1 align="center">NOTES</h1>
                 <form action="">
                     <input type="text" class="form-control rounded-pill mb-3" placeholder="Title" id="head">
-                    <textarea name="" id="body" cols="10" rows="11" maxlength="1500" class="form-control rounded-2"></textarea>
+                    <textarea name="" id="body" cols="10" rows="1" maxlength="1500" class="form-control rounded-2"></textarea>
                 </form>
                 <button onclick="addNote()" class="mt-3 float-end">Save</button>
-            </div>
                 <div>
-                    <div class="note" id="displayIt"></div>
+                    <div class="note" id="book"></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog text-light ">
+                <div class="modal-content down ">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Edit Note</h5>
+                        <button type="button" class="btn-close bt bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3 form">
+                            <label for="exampleFormControlInput1" class="form-label ">Title</label>
+                            <input type="name" class="form-control email" id="etitle" placeholder="Enter Note Title">
+                        </div>
+                        <br><br>
+                        <div>
+                            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+                            <textarea class="form-control" id="econtent" rows="3" placeholder="This is my first Note"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="save()">Save changes</button>
+                    </div>
                 </div>
             </div>
         </div>

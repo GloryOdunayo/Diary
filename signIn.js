@@ -4,7 +4,8 @@ let object = {
     email: mail.value,
     notes: [],
     contact: [],
-    events: [] 
+    events: [],
+    events: []
 }
 function login(){  
     let findUsers = allUsers.find((val) => val.email == mail.value && val.password == pass.value)

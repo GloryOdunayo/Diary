@@ -110,7 +110,8 @@
             for (let i = com.length-1; i >= 0; i--) {
                 book.innerHTML += `<div class=container card col-2 d-flex justify-content-around>
                 <div class= "fs-2 text-light">${com[i].title}</div>
-                <p class ="text-light">${com[i].notes}</p>
+                <p class ="text-light"/
+                >${com[i].notes}</p>
                 
                 <div class="container d-flex justify-content-end">
                     <div><button class="btn edit me-3" onclick ="edit(${i})" data-bs-toggle="modal" data-bs-target = "#exampleModal">Edit</button> <button class="btn delete" onclick = "del(${i})">Delete</button> </div>
@@ -123,7 +124,7 @@
             notes: body.value,
         }
 
-        const del =(index) =>{
+        const del = (index) =>{
             let array = com.find((item, ind) => index!= ind);
             com =array;
             for (let i=0; i < allUsers.length; i++){
@@ -131,6 +132,7 @@
                     allUsers[i].notes = com;
                     console.log(allUsers[i].notes);
                 }
+                // book.innerHTML = " ";
                 load()
                 localStorage.Users = JSON.stringify(allUsers);
             }
