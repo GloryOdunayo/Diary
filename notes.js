@@ -1,91 +1,81 @@
-// display()
-let allUsers = JSON.parse(localStorage.getItem("Users"))
-let indUser = JSON.parse(localStorage.getItem("email"))
-noteDetails =[]
-const saveIt =() => {
-    if (localStorage.getItem("Users")){
-        noteDetails = JSON.parse(localStorage.getItem("Users")) 
+var allUsers = JSON.parse(localStorage.getItem("Users"));
+var indUser = JSON.parse(localStorage.getItem("email"));
+let com, obj;
+for (var i = 0; i < allUsers.length; i++) {
+    if (allUsers[i].email == indUser) {
+        com = allUsers[i].notes
+    }
+}
+
+
+function load() {
+    for (var i = com.length - 1; i >= 0; i--) {
+
+        book.innerHTML += `<div class="container cal bg-success col-2 card mb-2 d-flex justify-content-around">
+            <div class="fs-3 text-light">${com[i].title}</div>
+            <p class="text-light">${com[i].notes}</p>
+
+            <div class="container  d-flex justify-content-end  ">
+                <div><button class="btn edit me-3" onclick= 'edit(${i})'  data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button> <button class="btn delete" onclick= 'del(${i})'>Del</button> </div>
+            </div>
+        </div>`
     }
 
-    object ={
+}
+
+const del = (index) => {
+    let array = com.filter((item, ind) => index != ind);
+    com = array;
+    for (var i = 0; i < allUsers.length; i++) {
+        if (allUsers[i].email == indUser) {
+            allUsers[i].notes = com;
+            console.log(allUsers[i].notes);
+        }
+    }
+    book.innerHTML = "";
+    load()
+    localStorage.Users = JSON.stringify(allUsers);
+
+}
+let ind;
+const edit = (i) => {
+    ind = i;
+    etitle.value = com[i].title;
+    econtent.value = com[i].notes;
+}
+const save = () => {
+    com[ind].title = etitle.value;
+    com[ind].notes = econtent.value;
+    for (var i = 0; i < allUsers.length; i++) {
+        if (allUsers[i].email == indUser) {
+            allUsers[i].notes = com;
+            console.log(allUsers[i].notes);
+        }
+    }
+    localStorage.data = JSON.stringify(allUsers);
+    book.innerHTML = "";
+    load();
+}
+
+function addNote() {
+    obj = {
         title: head.value,
-        note : body.value,
+        notes: body.value,
     }
-    noteDetails.push(object)
-    localStorage.setItem("Users", JSON.stringify(noteDetails));   
-    location.reload()
-}
-
-// let title = head.value;
-// let note = body.value;
-// function saveIt() {
-//     if (localStorage.user){
-//         noteDetails = JSON.parse(localStorage.user);
-//     }
-//     noteDetails.push(allUsers.notes);
-//     localStorage.Users =JSON.stringify(noteDetails);
-//     location.reload()
-
-// }
-
-function display() {
-    let tab =""
-    noteDetails = JSON.parse(localStorage.getItem("Users"));
-    for (let index = 13; index < noteDetails.length; index++) {
-        tab +=`<h2 class="note_title id="noteTitle">${noteDetails[index].title}</h2>
-        <p class= "note_body" id="noteBody>${noteDetails[index].note}</p> <div class ="note_btn"> <button onclick="editNote(${index}) class_btn note_view">Edit</button> <button onclick="deleteNote(${index}) class_btn note_delete">Delete</button></div>`
+    com.push(obj);
+    book.innerHTML = "";
+    load()
+    head.value = "";
+    body.value = "";
+    for (var i = 0; i < allUsers.length; i++) {
+        if (allUsers[i].email == indUser) {
+            allUsers[i].notes = com;
+            console.log(allUsers[i].notes);
+        }
     }
-    console.log(noteDetails)
-    displayIt.innerHTML = tab;
-    // localStorage.setItem("Users", JSON.stringify(noteDetails));
+    localStorage.Users = JSON.stringify(allUsers);
+
 }
-
-// const deleteNote = (index)=>{
-//     console.log(index)
-//     let filteredArray =myArray2.filter((item,ind)=>index!=ind)
-//     myArray2 = filteredArray
-//     disp.innerHTML =""
-//     showDetails()
-
-// const editItem = (index)=>{
-//     myArray2[index]= {name:"sade",age:1000,school:"Emilokan High School"}
-//     disp.innerHTML =""
-//     showDetails()
-// }
-// }
-// let filteredArray =myArray2.filter((item,ind)=>index!=ind)
-//     myArray2 = filteredArray
-//     disp.innerHTML =""
-
-// function deleteNote (index) {
-//     noteDetails = JSON.parse(localStorage.getItem("Users"));
-//     // console.log(noteDetails)
-//     noteDetails.splice(index,1)
-//     localStorage.setItem('Users', JSON.stringify(noteDetails))
-//     location.reload()
-//     noteDetail = JSON.parse(localStorage.getItem("Users"));
-//     noteDetail.splice(index,1)
-//     localStorage.setItem('Users', JSON.stringify(noteDetail))
-//     location.reload()
-// }
-
-// let editIt;
-// function edit(index){
-//     noteDetail = JSON.parse(localStorage.getItem("Users"))
-//     console.log(noteDetail)
-//     title.value = noteDetail[index].head;
-//     note.value = noteDetail[index].body;
-//     hov.style.display= "none"
-//     upd.style.display = "block";
-//     editIt =index;
-// }
-
-function update(){
-    noteDetails = JSON.parse(localStorage.getItem("Users"))
-    noteDetails.splice(editIt,1,{
-        title: head,
-        note : body, 
-    })
-    localStorage.Users = JSON.stringify(noteDetails)
-    location.reload()
+const logout = () => {
+    localStorage.removeItem("email");
 }

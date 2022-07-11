@@ -8,6 +8,9 @@ function signUp() {
         email: mail.value,
         password: pass.value,
         mobile: mob.value,
+        todo: [],
+        notes: [],
+        contacts: [],
     }
     if (firstName.value && mail.value && pass.value && mob.value) {
         if (getUser != null) {
@@ -30,10 +33,10 @@ function signUp() {
         allUser.push(obj);
         // console.log(allUser);
         localStorage.setItem("Users", JSON.stringify(allUser));
+        window.location.href = "signIn.html";
     }
     else {
         alert("Please fill the spaces");
         return;
     }
-    window.location.href = "signIn.html";
 }

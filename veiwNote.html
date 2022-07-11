@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
 </head>
 <body onload="load()">
     <div class="surface">
@@ -19,7 +19,7 @@
                 <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
             </svg>
         </div>
-        <div class="Your-Profile">To Do Lists</div>
+        <div class="Your-Profile">My Notes</div>
 
         <div class="dropdown-c-n">
             <button class="create-new">
@@ -42,16 +42,16 @@
                     <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
                   </svg> Dashboard
                 </a>
-                <a href="addContacts.html">&#128222; Contacts</a>
-                <a href="todo.html">&#128209; To do</a>
-                <a href="notes.html">&#128221; Notes</a>
-                <a href="events.html">&#128197; Events</a>
+                <a href="">&#128222; Contact</a>
+                <a href="">&#128209; To do</a>
+                <a href="veiwNote.html">&#128221; Notes</a>
+                <a href="">&#128197; Events</a>
               </div>
                 <div class="log-out">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
                         <path d="M7.5 1v7h1V1h-1z"/>
                         <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
-                    </svg><a class="d bi-power text-decoration-none" onclick="logout()">LogOut</a>
+                    </svg><a href="" class="d bi-power text-decoration-none">LogOut</a>
                 </div>
                 <div class="settings">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
@@ -61,17 +61,15 @@
             </div>
         </div>
 
-        <div class="portfoliocard">
-            <div class="container h-25 w-75 form  d-flex justify-content-evenly align-items-center">
-                <input type="text" class="form-control email" placeholder="Add New Task" id="todo">
-                <button class="btn btn-primary" onclick="add()">Add</button>
-            </div>
-    
-            <div class="over mx-auto" id="display">
-    
+        <div class="portfoliocard" style="background-color:  #A35D30;">
+            <form action="" style="display: none;">
+                <input type="text" class="form-control rounded-pill mb-3" placeholder="Title" id="head">
+                <textarea name="" id="body" cols="10" rows="11" maxlength="1500" class="form-control rounded-2"></textarea>
+            </form>
+            <div>
+                <div class="note" id="book"></div>
             </div>
         </div>
-
         <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog text-light ">
                 <div class="modal-content down ">
@@ -81,8 +79,13 @@
                     </div>
                     <div class="modal-body">
                         <div class="mb-3 form">
-                            <label for="exampleFormControlInput1" class="form-label ">Enter changes here</label>
-                            <input type="name" class="form-control email" id="editTodo" placeholder="Enter Note Title">
+                            <label for="exampleFormControlInput1" class="form-label ">Title</label>
+                            <input type="name" class="form-control email" id="etitle" placeholder="Enter Note Title">
+                        </div>
+                        <br><br>
+                        <div>
+                            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
+                            <textarea class="form-control" id="econtent" rows="3" placeholder="This is my first Note"></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -94,7 +97,68 @@
         </div>
     </div>
 
-    <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script>
-    <script src="todo.js"></script>
+    <script>
+        let allUsers = JSON.parse(localStorage.getItem("Users"));
+        let indUser = JSON.parse(localStorage.getItem("email"));
+        let com,obj;
+        for (let i = 0; i < allUsers.length; i++) {
+            if (allUsers[i].email == indUser) {
+                com = allUsers[i].notes
+            }
+        }
+        function load() {
+            for (let i = com.length-1; i >= 0; i--) {
+                book.innerHTML += `<div class=container card col-2 d-flex justify-content-around>
+                <div class= "fs-2 text-light">${com[i].title}</div>
+                <p class ="text-light"/
+                >${com[i].notes}</p>
+                
+                <div class="container d-flex justify-content-end">
+                    <div><button class="btn edit me-3" onclick ="edit(${i})" data-bs-toggle="modal" data-bs-target = "#exampleModal">Edit</button> <button class="btn delete" onclick = "del(${i})">Delete</button> </div>
+                </div>`
+            }
+        }
+
+        obj = {
+            title: head.value,
+            notes: body.value,
+        }
+
+        const del = (index) =>{
+            let array = com.find((item, ind) => index!= ind);
+            com =array;
+            for (let i=0; i < allUsers.length; i++){
+                if (allUsers[i].email == indUser) {
+                    allUsers[i].notes = com;
+                    console.log(allUsers[i].notes);
+                }
+                // book.innerHTML = " ";
+                load()
+                localStorage.Users = JSON.stringify(allUsers);
+            }
+        }
+        let ind;
+        const edit = (i) => {
+            ind = i;
+            etitle.value = com[i].title;
+            econtent.value = com[i].notes;
+        }
+
+        const save = () => {
+            com[ind].title = etitle.value;
+            com[ind].notes = econtent.value;
+            for (var i = 0; i < allUsers.length; i++) {
+                if (allUsers[i].email == mail) {
+                    allUsers[i].notes = com;
+                    console.log(allUsers[i].notes);
+                }
+            }
+            localStorage.data = JSON.stringify(allUsers);
+            load();
+        }
+        const logout = () => {
+            localStorage.removeItem("email");
+        }
+    </script>
 </body>
 </html>

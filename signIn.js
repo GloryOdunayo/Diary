@@ -4,20 +4,23 @@ let object = {
     email: mail.value,
     notes: [],
     contact: [],
-    events: [] 
+    events: [],
+    events: []
 }
 function login(){  
-    let findUsers = allUsers.find((val) => val.userMail == mail.value && val.password == pass.value)
+    let findUsers = allUsers.find((val) => val.email == mail.value && val.password == pass.value)
     console.log(findUsers);
     if (findUsers) {
         alert("Login successful");
-        localStorage.email = JSON.stringify.mail.value
+        localStorage.email = JSON.stringify(mail.value)
         window.location.href ="dashboard.html"
     }
     else{
         alert("Incorrect email or password");
         return;
-    }  
+    } 
+    mail.value ="";
+    pass.value = ""; 
 }
 
 function sign(){
