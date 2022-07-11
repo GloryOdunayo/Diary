@@ -1,0 +1,25 @@
+html,body {
+    /* overflow-y: auto; */
+    background-image: url(images/images\ \(4\).jpg);
+    background-size: cover;
+}
+#create {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+#logo {
+    display: grid;
+    justify-content: center;
+}
+@media screen and (max-width:450px) {
+    #logo {
+        display: none;
+    }
+    
+}
+/* .ball {
+    position: absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+} */

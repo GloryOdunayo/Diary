@@ -9,10 +9,12 @@ body {
     font-family:'Segoe UI';
 }
 div .form-control::placeholder {
-    /* color: black; */
     font-size: 15px;
-    /* color: #302D2B; */
 }
 h1 {
     text-shadow: 2px 2px black;
+}
+.mx{
+   display: grid;
+   justify-content: center;
 }
