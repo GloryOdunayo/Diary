@@ -12,7 +12,6 @@ function detailOfTheUser(){
     usersMail.innerHTML = mail
     pNo.innerHTML = no
 }
-``
 // function getNote(){
 //     let userDetail = allUsers.find((val) => val.note)
     
