@@ -28,28 +28,22 @@ body{
   width: 100%;
   position: absolute;
 }
-.letf-content{
+.left-content{
     background-color: #A35D30;
     height: 630px;
     width: 32vh;
     border-radius: 20px;
     position: relative;
-
 }
 .Your-Profile{
   position: absolute;
   top: 68px;
-  left: 40vh;
+  left: 33vh;
   font-family: sans-serif;
   font-size: xx-large;
   font-style: italic;
   font-weight: bold;
-}
-.bi-person-fill{
-  margin-right: 20px;
-  position: absolute;
-  top: 70px;
-  left: 217px;
+  display: inline;
 }
 .xrdd{
     margin-left: 25px;
@@ -79,7 +73,7 @@ body{
 .bi-bell{
     color: rgb(59, 52, 52);
     position: absolute;
-    right: 60px;
+    right: 61px;
     bottom: 16px;
     height: 20px;
     width: 20px;
@@ -94,19 +88,13 @@ body{
   height: 46px;
   width: 46px;
 }
-/* .dashbd-logo{
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  width: 10px;
-  height: 10px;
-} */
 .bi-house, .bi-calendar4-event, .bi-list-task, .bi-journals, .bi-person-lines-fill{
   margin: 0px 20px 0px 45px;
 }
 
 .dashboard-menu {
     width: 100%;
+    display: inline-block;
 }
   
 .dashboard-menu a {
@@ -153,7 +141,7 @@ body{
     line-height: 28px;
     align-items: center;
     max-width: 400px;
-    margin: 10px 50px 0px 350px;
+    margin: -20px 50px 0px 350px;
    }
    
    .input {
@@ -187,7 +175,7 @@ body{
     width: 1rem;
     height: 1rem;
    }
-.create-new {
+.create-new{
     display: flex;
     align-items: center;
     font-family: inherit;
@@ -264,7 +252,7 @@ body{
                 0px 2px 6px rgba(0,0,0,0.5);
     border-radius:6px;
     left: 19%;
-    top: 128px;
+    top: 123px;
     overflow:hidden;
     z-index:100;
   }
@@ -357,49 +345,188 @@ body{
     font-style: italic;
     font-size: 2.2rem;
   }
-  @media only screen and (max-width: 991px) {
-  .letf-content{
+  .mod-letf-content{
+    position: absolute;
     display: none;
+    
+  }
+  
+.sidenav {
+  height: 100%;
+  position: absolute;
+  z-index: 300;
+  top: 0;
+  left: 0px;
+  background-color:  #A35D30;
+  border-radius: 15px 15px 0px 0px;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 0px;
+  text-decoration: none;
+  font-size: 13px;
+  color: aliceblue;
+  display: block;
+  transition: 0.3s;
+  margin: 30px 0px 10px -27px;
+}
+
+.sidenav a:hover {
+  color:  #A35D30;
+  background-color: aliceblue;
+  padding: 8px 0px 8px 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: -30px;
+  right: 1px;
+  font-size: 36px;
+}
+.left_col2, .right_col2{
+  display: none;
+  width: 100%;
+  border: none;
+  height: 30%;
+  margin: 0px;
+  transform: translateX(100px)
+  /* height: 50%; */
+}
+@media only screen and (min-width: 991px){
+  .sidenav{
+    display: none;
+  }
+}
+  @media only screen and (max-width: 995px) {
+
+  .surface{
+    width: 90vw;
+  }
+  .left-content, .settings, .log-out{
+    display: none;
+  }
+  .mod-left-content{
+    display: block;
+    margin: 9px 15px;
   }
   .surface-header1{
     width: 100%;
   }
+  .dashboard-menu a {
+    text-align: left;
+    font-weight: 530;
+
+} 
+.dashboard-menu a:hover {
+    background-color: #DCDCDC;
+    color: black;
+}
+  
+.dashboard-menu a.active {
+    background-color: #6A4C34;
+    color: aliceblue;
+    border-radius: 15px 15px 0px 0px;
+}
+  .group {
+    line-height: 28px;
+    align-items: center;
+    max-width: 213px;
+    margin: -37px 0px 0px 15%;
+   }
+   
+   .icon {
+    position: relative;
+    left: 12.3rem;
+    width: 1rem;
+    height: 1rem;
+   }
+
   .Your-Profile{
     position: absolute;
-    margin-top: -20px;
     width: 100%;
-    transform: translateX(-250px);
+    height: 1px;
+    left: 15px;
+    top: 70px;
     font-size: 28px;
   }
   .dropdown-c-n{
     z-index: 999;
+    position: absolute;
+    top: 70px;
+    right: 7px;
   }
   .portfoliocard{
-    transform: translateX(-60px);
-    width: 80vw;
+    position: relative;
+    width: 76%;
+    height:900px;
+    left: 15px;
+    overflow: none;
   }
-  .cover{
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 20vh;
+  .profile_picture{
+    width:155px;
+    height:155px;
+    position:relative;
+    margin-top: -150px;
+    left: 25%;
+    right: 25%;
+    padding:3px;
+    z-index: 100;
   }
-  .left_col{
-   width: 100%;
-  position: absolute;
-  clip-path: none;
+  .coverphoto{
+    width:100%;
+    height:130px;
+    z-index:99;
   }
-  .contact_information{
-   transform: translateY(-50px);
+  .left_col, .right_col{
+    display: none;
   }
-  /* .right_col{
-   transform: translate(-50px,20px);
-   width:80%;
-   height:100px;
-    z-index: 1;
+  .left_col2, .right_col2{
+    display: block;
+    padding: 0px;
+    margin:0px;
+    position: relative;
+    top: -5px;
+    left: -100px;
+    list-style: none;
   }
-   */
-
+  .name{
+    display: inline;
+    position: absolute;
+    top: 30px;
+    left: 6%;
+  }
+  .work{
+    margin-left: 120px;
+    margin-top:100px;
+  }
+  /* .xrdd{
+    margin-left: 25px;
+    display: inline;
 }
- 
+.bi-gear{
+    color:black;
+    position: absolute;
+    left: 5px;
+    bottom: 50px;
+    height: 20px;
+    width: 20px;
+}
+.text-log-out{
+  margin-left: 30px;
+  color: black;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+}
+.bi-power{
+  color: black;
+  position: absolute;
+  left: 0px;
+  bottom: 20px;
+
+} */
+  
+}
