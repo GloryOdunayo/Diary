@@ -8,6 +8,7 @@ function signUp() {
         email: mail.value,
         password: pass.value,
         mobile: mob.value,
+        Bio: bio.value,
         todo: [],
         notes: [],
         contacts: [],

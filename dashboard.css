@@ -240,7 +240,7 @@ body{
     border-radius:6px;
     left: 22%;
     top: 130px;
-    overflow:hidden;
+    /* overflow:hidden; */
     z-index:100;
   }
   .coverphoto{
