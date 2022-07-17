@@ -16,7 +16,10 @@ html,body {
     #logo {
         display: none;
     }
-    
+    #divguy {
+        overflow: scroll;
+        height: auto;
+    }
 }
 /* .ball {
     position: absolute;
