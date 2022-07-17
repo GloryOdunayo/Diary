@@ -7,10 +7,12 @@ function detailOfTheUser(){
     let lname = userDetail.lastname
     let mail = userDetail.email
     let no = userDetail.mobile
+    let info = userDetail.bio
     let fullname = fname + " " + lname
     allname.innerHTML = fullname
     usersMail.innerHTML = mail
     pNo.innerHTML = no
+    bio.innerHTML = info
 }
 // function getNote(){
 //     let userDetail = allUsers.find((val) => val.note)
