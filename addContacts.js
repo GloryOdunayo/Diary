@@ -14,7 +14,7 @@ function saveContact() {
         notes: notes.value,
         picture: pic.value
     }
-    // let newcontact = {"cont": contact}
+    let newcontact = {"cont": contact}
     if (firstName.value && phoneNo.value && pic.value) {
         if (getUser != null) {
             allContact = getUser;
