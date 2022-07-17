@@ -11,11 +11,11 @@ for (var i = 0; i < allUsers.length; i++) {
 function load() {
     for (var i = com.length - 1; i >= 0; i--) {
 
-        book.innerHTML += `<div class="container cal bg-success col-2 card mb-2 d-flex justify-content-around">
+        book.innerHTML += `<div class="container cal bg-success card mb-2 d-flex justify-content-around">
             <div class="fs-3 text-light">${com[i].title}</div>
             <p class="text-light">${com[i].notes}</p>
 
-            <div class="container  d-flex justify-content-end  ">
+            <div class="container d-flex justify-content-end ">
                 <div><button class="btn edit me-3" onclick= 'edit(${i})'  data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button> <button class="btn delete" onclick= 'del(${i})'>Del</button> </div>
             </div>
         </div>`
