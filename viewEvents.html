@@ -7,14 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.css">
     <link rel="stylesheet" href="dashboard.css">
-    <style>
-        body{
-            background-image: url(images/img\ \(122\).jpg);
-            background-size: cover;
-        }
-    </style>
 </head>
-<body onload="notinIn()" onload="load()">
+<body onload="notinIn()">
     <div class="surface">
         <div class="shadow-sm surface-header1">
             <div class="mod-left-content">
@@ -31,10 +25,11 @@
             </svg>
             <img class="dashbd-logo" src="images//Beige_And_Black_Minimalist_Clothing_Store_Logo-removebg-preview.png" alt="our brand logo">
         </div>
-
-        <div class="Your-Profile"> <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
-            <path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/><path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/></svg><span>My Notes</span>
-        </div>
+        
+        <div class="Your-Profile"><svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="currentColor" class="bi bi-calendar4-event" viewBox="0 0 16 16">
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z"/>
+            <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+          </svg>My Events</div>
 
         <div class="dropdown-c-n">
             <button class="create-new">
@@ -87,7 +82,6 @@
             </div>
         </div>
 
-
         <div class="left-content">
             <img src="pics/good-faces-xmSWVeGEnJw-unsplash.jpg" alt="Profile Picture" class="profilePic">
             <div class="dashboard-menu">
@@ -125,49 +119,13 @@
                 </svg><span class="xrdd bi-gear">Settings</span>
             </div>
         </div>
-    
-        
-        <div class="portfoliocard">
-            <div class="container mt-5 m-auto">
-                <h1 align="center">NOTES</h1>
-                <form action="">
-                    <input type="text" class="form-control rounded-pill mb-3" placeholder="Title" id="head">
-                    <textarea name="" id="body" cols="50" rows="5" maxlength="1500" class="form-control rounded-2"></textarea>
-                </form>
-                <button onclick="addNote()" class="mt-3">Save</button>
-            </div>
-            <div>
-                <div class="note" style="padding: 10px; overflow-x: scroll; height: 200px;" id="book"></div>
-            </div>
-        </div>
-        <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog text-light ">
-                <div class="modal-content down ">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Edit Note</h5>
-                        <button type="button" class="btn-close bt bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="mb-3 form">
-                            <label for="exampleFormControlInput1" class="form-label ">Title</label>
-                            <input type="name" class="form-control email" id="etitle" placeholder="Enter Note Title">
-                        </div>
-                        <br><br>
-                        <div>
-                            <label for="exampleFormControlTextarea1" class="form-label">Content</label>
-                            <textarea class="form-control" id="econtent" rows="3" placeholder="This is my first Note"></textarea>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="save()">Save changes</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+        <!-- <div class="portfoliocard">
+            
+        </div> -->
     </div>
 
-    <script src="notes.js"></script>
-    <!-- <script src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.js"></script> -->
+    <script src="events.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
