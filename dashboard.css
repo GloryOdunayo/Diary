@@ -68,7 +68,6 @@ body{
   position: absolute;
   left: 50px;
   bottom: 20px;
-
 }
 .bi-bell{
     color: rgb(59, 52, 52);
@@ -405,7 +404,7 @@ body{
   .surface{
     width: 90vw;
   }
-  .left-content, .settings, .log-out{
+  .left-content{
     display: none;
   }
   .mod-left-content{
@@ -502,31 +501,34 @@ body{
     margin-left: 120px;
     margin-top:100px;
   }
-  /* .xrdd{
-    margin-left: 25px;
-    display: inline;
+
+.settings{
+  position: absolute;
+  bottom: 55px;
+  color:black;
+  font-size: small;
+  left: 26px;
+
 }
 .bi-gear{
-    color:black;
-    position: absolute;
-    left: 5px;
-    bottom: 50px;
-    height: 20px;
-    width: 20px;
+  bottom: 0px;
+  left: 0px;
+    height: 15px;
+    width: 15px;
 }
-.text-log-out{
-  margin-left: 30px;
+.log-out{
+  display: inline;
+}
+.text-log-out, .bi-power{
   color: black;
   position: absolute;
-  left: 0px;
-  bottom: 20px;
+  left: 25px;
+  font-size: small;
+  bottom: 23px;
 }
 .bi-power{
-  color: black;
-  position: absolute;
-  left: 0px;
-  bottom: 20px;
+  height: 18px;
+  width: 18px;
 
-} */
-  
+}
 }

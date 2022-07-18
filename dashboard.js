@@ -18,6 +18,9 @@ function detailOfTheUser(){
 //     let userDetail = allUsers.find((val) => val.note)
     
 // }
+function logout(){
+  window.location.href = "signin.html"
+}
 function openNav() {
     document.getElementById("mySidenav").style.width = "140px";
   }
