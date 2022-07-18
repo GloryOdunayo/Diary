@@ -12,11 +12,23 @@ html,body {
     display: grid;
     justify-content: center;
 }
+#container {
+    overflow: scroll;
+    height: 400px;
+    overflow-x: hidden;
+}
 @media screen and (max-width:450px) {
     #logo {
         display: none;
     }
-    
+    #container {
+        overflow: scroll;
+        height: 350px;
+        overflow-x: hidden;
+    }
+    button#save {
+        transform: translate(-100px, 640px);
+    }
 }
 /* .ball {
     position: absolute;

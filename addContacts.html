@@ -128,8 +128,8 @@
                 <label for="pic"></label>
                 <input type="file" id="pic" placeholder="Photo" required="">
             </div>
-            <div class="mx-auto bg-white border mt-1 w-75 shadow">
-                <div class="border-bottom ms-3 p-3 mt-3 mx-3 bg-light" id="create">Create Contact<button class="btn col-3 float-end btn-outline-secondary btn-secondary text-light" onclick="saveContact()">Save</button></div>
+            <div class="mx-auto bg-white border mt-1 w-75 shadow container" id="container">
+                <div class="border-bottom ms-3 p-3 mt-3 mx-3 mb-3 bg-light container-fluid" id="create">Create Contact<button class="btn col-lg-3 col-sm-4 float-end btn-outline-secondary btn-secondary text-light" onclick="saveContact()" id="save" type="button">Save</button></div>
         
                 <div class="row">
             
@@ -140,7 +140,7 @@
                     </div> -->
                 </div>
                 
-                <div id="divGuy" class="px-2 py-4 mx-3 bg-light mb-4 rounded row border">
+                <div id="divGuy" class="px-lg-2 py-4 mx-3 bg-light mb-4 rounded row container-fluid">
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="text-secondary d-flex mb-3">
                             <label for="firstName" class="mt-2"><img src="images/black-24dp/1x/outline_person_black_24dp.png" alt=""></label>&nbsp;
