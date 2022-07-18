@@ -74,7 +74,6 @@ function addNote() {
         }
     }
     localStorage.Users = JSON.stringify(allUsers);
-
 }
 const logout = () => {
     localStorage.removeItem("email");
